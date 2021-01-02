@@ -2,7 +2,7 @@ version: 0.2
 phases:
   build:
     commands:
-    - aws s3 sync --delete "s3://kegsengineering.com"
+    - aws s3 sync --delete . "s3://kegsengineering.com"
   post_build:
     commands:
-    - echo "post-build  step "
+    - echo "post-build  step"
