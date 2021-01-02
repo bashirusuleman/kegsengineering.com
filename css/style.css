@@ -74,10 +74,8 @@ ul, li{
 @media (min-width:700px) {
     #logo {
         width:180px;
-        height:180px;
-        
-        
-    } 
+        height:180px;    
+     } 
     .navbar{
         display:flex;
         flex-direction:row;                
@@ -108,9 +106,8 @@ ul, li{
     display: none;
 }
 .slide-img img{
-    height:510px;
+    height:520%;
     width:100%;
-    
 }
 
 /* Slideshow container */
@@ -174,9 +171,7 @@ ul, li{
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
-}
-
-
+ }
 
 
 /*---------------------Solutions  ----------------------- */
@@ -230,17 +225,24 @@ ul, li{
 
 .kegs-text {
     width:95%;
-    text-align:justify;
+    text-align:left;
     color: #fff;
-    line-height:1.6;
+    line-height:1.4;
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     margin-top:2rem;
 }
 .album{
-    
     line-height: 1.3rem;
     text-align:center;
+}
+
+@media (min-width:700px){
+    .kegs-text{
+    line-height: 1.4;
+    font-size: 1.5rem;
+    text-align: justify; 
+ }
 }
 
 /* START HERE */
