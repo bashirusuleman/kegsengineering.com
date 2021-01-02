@@ -1,0 +1,14 @@
+version: 0.2
+phases:
+  install:
+    commands:
+    - echo "Install step"
+  pre-build:
+    commands:
+    - echo "pre-build step"
+  build:
+    commands:
+    - aws s3 sync --delete "s3://kegsengineering.com"
+  post_build:
+    commands:
+    - echo "post-build  step"
